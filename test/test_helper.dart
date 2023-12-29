@@ -11,12 +11,11 @@ class TestHelper {
     EdgeInsets? padding,
     ShapeBorder? shapeBorder,
   }) {
-    final defaultStyle = ThemeDataProvider.defaultSuperButtonStyle;
     final style = SuperButtonStyle(
-      colour: colour ?? defaultStyle.colour,
-      textColour: textColour ?? defaultStyle.textColour,
+      colour: colour ?? ThemeDataProvider.superButtonStyle.colour,
+      textColour: textColour ?? ThemeDataProvider.superButtonStyle.textColour,
       padding: padding ?? EdgeInsets.zero,
-      shapeBorder: shapeBorder ?? defaultStyle.shapeBorder,
+      shapeBorder: shapeBorder ?? ThemeDataProvider.superButtonStyle.shapeBorder,
     );
     return SuperButton(
       text: text ?? 'text',
