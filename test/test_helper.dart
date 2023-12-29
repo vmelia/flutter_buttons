@@ -23,4 +23,21 @@ class TestHelper {
       onPressed: () {},
     );
   }
+
+  static TitleWidget titleWidget({
+    String? text,
+    TextStyle? textStyle,
+    TextAlign? textAlign,
+    EdgeInsets? padding,
+  }) {
+    final style = TitleWidgetStyle(
+      textStyle: textStyle ?? ThemeDataProvider.titleWidgetStyle.textStyle,
+      textAlign: textAlign ?? ThemeDataProvider.titleWidgetStyle.textAlign,
+      padding: padding ?? EdgeInsets.zero,
+    );
+    return TitleWidget(
+      text: text ?? 'text',
+      style: style,
+    );
+  }
 }

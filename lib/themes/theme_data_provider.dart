@@ -14,7 +14,11 @@ class ThemeDataProvider {
       );
 
   static TitleWidgetStyle get titleWidgetStyle => const TitleWidgetStyle(
-        textStyle: TextStyle(),
+        textStyle: TextStyle(
+          color: Colors.blue,
+          backgroundColor: Colors.white,
+          fontSize: 20,
+        ),
         textAlign: TextAlign.center,
         padding: EdgeInsets.all(8.0),
       );
