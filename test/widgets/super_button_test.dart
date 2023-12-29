@@ -21,7 +21,6 @@ void main() {
         ..addScenario('circle border', TestHelper.superButton(shapeBorder: const CircleBorder()));
 
       await tester.pumpWidgetBuilder(builder.build());
-
       await screenMatchesGolden(tester, 'SuperButton');
     });
   });

@@ -4,26 +4,26 @@ import '../styles/super_button_style.dart';
 import '../widgets.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+  const MainPage({super.key, required this.superButtonStyle});
+  final SuperButtonStyle superButtonStyle;
 
   @override
   Widget build(BuildContext context) {
-    final superButtonStyle = Theme.of(context).extension<SuperButtonStyle>()!;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Button sample'),
+        title: const Text('Main Page'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            _buildButton(superButtonStyle, 'red', Colors.red),
-            _buildButton(superButtonStyle, 'orange', Colors.orange),
-            _buildButton(superButtonStyle, 'yellow', Colors.yellow),
-            _buildButton(superButtonStyle, 'green', Colors.green),
-            _buildButton(superButtonStyle, 'blue', Colors.blue),
-            _buildButton(superButtonStyle, 'indigo', Colors.indigo),
-            _buildButton(superButtonStyle, 'deepPurple', Colors.deepPurple),
+            _buildButton(superButtonStyle, 'Red', Colors.red),
+            _buildButton(superButtonStyle, 'Orange', Colors.orange),
+            _buildButton(superButtonStyle, 'Yellow', Colors.yellow),
+            _buildButton(superButtonStyle, 'Green', Colors.green),
+            _buildButton(superButtonStyle, 'Blue', Colors.blue),
+            _buildButton(superButtonStyle, 'Indigo', Colors.indigo),
+            _buildButton(superButtonStyle, 'Violet', Colors.deepPurple),
           ],
         ),
       ),

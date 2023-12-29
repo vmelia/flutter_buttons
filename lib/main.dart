@@ -12,10 +12,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final superButtonStyle = ThemeDataProvider.defaultSuperButtonStyle;
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeDataProvider.themeData,
-      home: const MainPage(),
+      home: MainPage(superButtonStyle: superButtonStyle),
     );
   }
 }
